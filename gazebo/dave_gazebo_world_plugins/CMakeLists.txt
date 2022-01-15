@@ -48,7 +48,7 @@ catkin_package(
     include
     ${CMAKE_CURRENT_BINARY_DIR} # for generated messages
     ${GAZEBO_MSG_INCLUDE_DIRS}
-	LIBRARIES
+  LIBRARIES
     dave_gazebo_world_plugins_msgs
     dave_ocean_current_world_plugin
   CATKIN_DEPENDS
