@@ -1,0 +1,18 @@
+material Bathymetry/MontereyBay.R_-121.825_-121.815_36.800_36.810
+{
+    technique
+    {
+        pass
+        {
+            ambient 0.5 0.5 0.5 1.0
+            diffuse 0.5 0.5 0.5 1.0
+            specular 0.2 0.2 0.2 1.0 12.5
+
+            texture_unit
+            {
+                texture ../textures/MontereyBay.R_-121.825_-121.815_36.800_36.810.epsg3857.texture.png
+                scale 1 1
+            }
+        }
+    }
+}
