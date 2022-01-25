@@ -56,7 +56,8 @@
 
     <plugin name="dave_bathymetry_plugin" filename="libdave_bathymetry_world_plugin.so">
       <bathymetry>
-        <grid prefix="MontereyBay" priority="1" epsg="3857" colmax="50" rowmax="50" anchor_lon="-121.825" anchor_lat="36.790" spacing_lon="0.01" spacing_lat="0.01" />
+        <grid prefix="MontereyBay" tiles_to_keep="2" priority="1" colmax="50" rowmax="50" 
+              anchor_lon="-121.825" anchor_lat="36.790" spacing_lon="0.01" spacing_lat="0.01" />
       </bathymetry>
     </plugin>
 
