@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="namespace" default="robot" doc="namespace of the robot"/>
+  <arg name="refresh_rate" default="1.0" doc="Location refresh rate in Hz"/>
+  <arg name="save_html" default="True" doc="Html file will be saved at /tmp/GPSViewer_log.html"/>
+  <arg name="default_zoom" default="11" doc="Default viewer zoom (range from 0 to 15, larger mean more zoom"/>
+
+  <node pkg="gps_map_viewer" type="gps_map_viewer.py"	name="gps_map_viewer"	output="screen">
+    <param name="namespace" value="$(arg namespace)"/>
+    <param name="refresh_rate" value="$(arg refresh_rate)"/>
+    <param name="save_html" value="$(arg save_html)"/>
+    <param name="default_zoom" value="$(arg default_zoom)"/>
+  </node>
+
+</launch>

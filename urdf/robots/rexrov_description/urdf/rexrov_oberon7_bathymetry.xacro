@@ -40,18 +40,6 @@
         <xacro:rexrov_hydro_model namespace="$(arg namespace)"/>
         <xacro:oberon7_hydro_model namespace="oberon7"/>
       </plugin>
-
-      <plugin name="hector_gps_sim" filename="libhector_gazebo_ros_gps.so">
-        <alwaysOn>true</alwaysOn>
-        <updateRate>0.25</updateRate>
-        <bodyName>$(arg namespace)/base_link</bodyName>
-        <topicName>hector_gps</topicName>
-        <velocityTopicName>hector_gps_velocity</velocityTopicName>
-        <drift>0.0 0.0 0.0</drift>
-        <gaussianNoise>0.0 0.0 0.0</gaussianNoise>
-        <velocityDrift>0 0 0</velocityDrift>
-        <velocityGaussianNoise>0.0 0.0 0.0</velocityGaussianNoise>
-      </plugin>
     </gazebo>
   </xacro:rexrov_base>
 
